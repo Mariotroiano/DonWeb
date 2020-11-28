@@ -2,8 +2,8 @@ Instrucciones :
 
 1_ conectarse al repositorio remoto : git remote add origin https://github.com/Mariotroiano/DonWeb.git
 2_ verificar que la conexion fue exitosa : git remote -v
-3_ clorar el repositorio : git clone https://github.com/Mariotroiano/DonWeb.git
-4_ una vez cloado el repositorio, instalar dependencias : npm i
+3_ clonar el repositorio : git clone https://github.com/Mariotroiano/DonWeb.git
+4_ una vez clonado el repositorio, instalar dependencias : npm i
 5_ por último iniciar la app con : npm start 
 
 En la app se puede : 
