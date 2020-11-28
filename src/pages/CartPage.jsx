@@ -7,6 +7,7 @@ import useCartPage from '../hooks/useCartPage'
 const CartPage = props => {
 
     const { setTotalItemsInCart, productsList, setProductsList, searchCart, setSearchCart, showProducts, totalItemsInCart, history } = useCartPage()
+    let { count } = useCartPage()
 
     useEffect(() => {
         setStorage(productsList)
@@ -57,7 +58,7 @@ const CartPage = props => {
 
                     {showProducts.filter(product => product.nombre.toLowerCase().includes(searchCart)).map(product =>
                         <tr >
-                            <th scope="row"></th>
+                            <th scope="row">{count++}</th>
                             <td>{product.nombre}</td>
                             <td>{product.periodo}</td>
                             <td>{product.valor}</td>

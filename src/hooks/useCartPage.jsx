@@ -9,6 +9,7 @@ const useCartPage = () => {
     const [showProducts, setShowProducts] = useState([])
     const [searchCart, setSearchCart] = useState('')
     const history = useHistory()
+    let count = 1;
 
     useEffect(() => {
 
@@ -30,7 +31,7 @@ const useCartPage = () => {
 
     }, [productsList])
 
-    return {setTotalItemsInCart, productsList, setProductsList, searchCart, setSearchCart, showProducts, totalItemsInCart, history}
+    return {setTotalItemsInCart, productsList, setProductsList, searchCart, setSearchCart, showProducts, totalItemsInCart, history, count}
 
 }
 
